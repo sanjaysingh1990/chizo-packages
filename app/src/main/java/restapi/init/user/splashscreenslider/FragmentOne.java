@@ -1,10 +1,13 @@
 package restapi.init.user.splashscreenslider;
 
-import android.content.Context;
-import android.net.Uri;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.ImageSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,11 +15,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-import com.hanks.htextview.HTextView;
-import com.hanks.htextview.HTextViewType;
 
-
-public class FragmentOne extends Fragment implements Animation.AnimationListener{
+public class FragmentOne extends BaseFragment implements Animation.AnimationListener{
 
 
     TextView text1,text2,text3;
@@ -41,6 +41,11 @@ public class FragmentOne extends Fragment implements Animation.AnimationListener
         text1=(TextView)v.findViewById(R.id.text1);
         text2=(TextView)v.findViewById(R.id.text2);
         text3=(TextView)v.findViewById(R.id.text3);
+
+        showSpannable(text1);
+        showSpannable(text2);
+        showSpannable(text3);
+
 
         // load the animation
         animFadein = AnimationUtils.loadAnimation(getContext(),
@@ -105,4 +110,6 @@ public class FragmentOne extends Fragment implements Animation.AnimationListener
     public void onAnimationRepeat(Animation animation) {
 
     }
+
+
 }

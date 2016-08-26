@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="@dimen/img_width_height"
             android:layout_height="@dimen/img_width_height"
-            android:src="@mipmap/ic_launcher"
+            android:src="@mipmap/chizo_logo"
 
             />
 
@@ -39,7 +39,6 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc"
             android:id="@+id/text1"
-            android:drawableLeft="@drawable/tick"
             android:drawablePadding="5dp"
             android:visibility="invisible"
             />
@@ -56,7 +55,6 @@
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc"
-            android:drawableLeft="@drawable/tick"
             android:visibility="invisible"
             android:drawablePadding="5dp"
             />
@@ -72,7 +70,7 @@
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc"
-            android:drawableLeft="@drawable/tick"
+
             android:visibility="invisible"
 
             />
@@ -98,7 +96,7 @@
                 android:paddingRight="28dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:text="TRY IT NOW FOR 30 Days"
+                android:text="TRY IT NOW FOR A DAY"
                 android:textColor="#fff"
                 android:textSize="15sp"
                 android:layout_marginTop="40dp"

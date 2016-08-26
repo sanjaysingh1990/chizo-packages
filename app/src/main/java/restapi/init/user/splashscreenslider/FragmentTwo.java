@@ -12,7 +12,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 
-public class FragmentTwo extends Fragment implements Animation.AnimationListener {
+public class FragmentTwo extends BaseFragment implements Animation.AnimationListener {
 
     TextView text1,text2,text3;
     // Animation
@@ -29,6 +29,10 @@ public class FragmentTwo extends Fragment implements Animation.AnimationListener
         text2=(TextView)v.findViewById(R.id.text5);
         text3=(TextView)v.findViewById(R.id.text6);
 
+
+        showSpannable(text1);
+        showSpannable(text2);
+        showSpannable(text3);
         // load the animation
         animFadein = AnimationUtils.loadAnimation(getContext(),
                 R.anim.fade_in);
